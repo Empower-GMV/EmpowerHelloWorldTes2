@@ -14,6 +14,8 @@ namespace UnitTestProjectHelloWorld2
             Assert.AreEqual(100, result);
             result = script.OperationB(10);
             Assert.AreEqual(1000, result);
+            script.Run(null);
+            
 
         }
     }
