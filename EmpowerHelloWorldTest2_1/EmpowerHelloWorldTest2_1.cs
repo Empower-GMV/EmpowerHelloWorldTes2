@@ -51,24 +51,38 @@ dd/mm/2023	1.0.0.1		XXX, Skyline	Initial version
 
 namespace EmpowerHelloWorldTest2_1
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Globalization;
-	using System.Text;
-	using Skyline.DataMiner.Automation;
-	
-	/// <summary>
-	/// Represents a DataMiner Automation script.
-	/// </summary>
-	public class Script
-	{
-		/// <summary>
-		/// The script entry point.
-		/// </summary>
-		/// <param name="engine">Link with SLAutomation process.</param>
-		public void Run(IEngine engine)
-		{
-			engine.GenerateInformation("Hello");
-		}
-	}
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.Text;
+    using Skyline.DataMiner.Automation;
+
+    /// <summary>
+    /// Represents a DataMiner Automation script.
+    /// </summary>
+    public class Script
+    {
+        /// <summary>
+        /// The script entry point.
+        /// </summary>
+        /// <param name="engine">Link with SLAutomation process.</param>
+        public void Run(IEngine engine)
+        {
+            engine.GenerateInformation("Hello");
+        }
+        public void OperationA(IEngine engine, int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                engine.GenerateInformation($"Count is {count}");
+            }
+        }
+        public void OperationB(IEngine engine, int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                engine.GenerateInformation($"Count is {count}");
+            }
+        }
+    }
 }
