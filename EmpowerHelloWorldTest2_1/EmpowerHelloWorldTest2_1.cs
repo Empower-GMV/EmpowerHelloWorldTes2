@@ -70,7 +70,7 @@ namespace EmpowerHelloWorldTest2_1
         {
            //  engine.GenerateInformation("Hello"); 
         }
-		public int  OperationA(int count)
+		public int OperationA(int count)
 		{
 			var result = count * 10;
 			return result;
