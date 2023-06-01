@@ -52,6 +52,9 @@
     <PackageReference Include="MSTest.TestFramework">
       <Version>2.2.10</Version>
     </PackageReference>
+    <PackageReference Include="Skyline.DataMiner.Dev.Automation">
+      <Version>10.3.6</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EmpowerHelloWorldTest2_1\EmpowerHelloWorldTest2_1.csproj">
