@@ -70,19 +70,15 @@ namespace EmpowerHelloWorldTest2_1
         {
             engine.GenerateInformation("Hello");
         }
-        public void OperationA(IEngine engine, int count)
+        public int OperationA(int count)
         {
-            for (int i = 0; i < count; i++)
-            {
-                engine.GenerateInformation($"Count is {count}");
-            }
-        }
-        public void OperationB(IEngine engine, int count)
+			int result = count * 10;
+			return result;
+		}
+        public int OperationB(int count)
         {
-            for (int i = 0; i < count; i++)
-            {
-                engine.GenerateInformation($"Count is {count}");
-            }
+            int result = count * 10;
+            return result;
         }
     }
 }
