@@ -68,7 +68,7 @@ namespace EmpowerHelloWorldTest2_1
         /// <param name="engine">Link with SLAutomation process.</param>
         public void Run(IEngine engine)
         {
-            engine.GenerateInformation("Hello");
+            engine.GenerateInformation("Hello"); 
         }
         public void OperationA(IEngine engine, int count)
         {
